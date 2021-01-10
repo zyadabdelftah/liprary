@@ -1,4 +1,4 @@
- body {
+   body {
 	padding: 0;
 	margin: 0;
 }
@@ -153,7 +153,7 @@ P{
 
 
 .box {
-	width:200px;
+	width:150px;
 	border: 2px solid black;
 	float: left;
 	margin: 10px;
@@ -183,7 +183,7 @@ P{
 
 
 .box {
-	width:200px;
+	width:150px;
 	border: 2px solid black;
 	float: left;
 	margin: 10px;
@@ -198,7 +198,7 @@ background: linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0); /* W3C, IE 10+
 ;
  transform:translate(5px,6px);}
  h3{
- 	background-color: #eee;
+ 	background-color: blue;
  }
   
 
@@ -217,7 +217,8 @@ text-align:center;
 
 .social{
  	width:100%;
- 	padding:12px;
+ 	padding:12px; 
+  
 }
 i:hover{
 background-color:#eee;  
@@ -225,7 +226,24 @@ background-color:#eee;
 
  }
 
+.change {
+  font-size: large;
+  border-radius: 50px;
+  position: fixed;
+  bottom: 50px;
+  right:10px;
+  background-color: blue;
+}
 
+.night {
+  background-color: black;
+  color: white;
+}
+
+.light {
+  background-color: #eee;
+  color: grey;
+}
 
 
 
