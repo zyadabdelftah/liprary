@@ -1,4 +1,4 @@
- <nav>
+   <nav>
 	
 
 
@@ -6,7 +6,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<script src="main.js"></script>
+	<script>
+function nightMode() {
+  const element = document.getElementsByTagName("body")
+  if (element[0].classList.contains("light")) {
+    element[0].classList.remove("light")
+    element[0].classList.add("night")
+  } else {
+    element[0].classList.remove("night")
+    element[0].classList.add("light")
+  }
+}
+
+</script>
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title></title>
@@ -20,13 +32,12 @@
 	<input id="nav-toggle" type="checkbox">
 	<div class="logo"> المرام والرضاب</div>
 	<ul class="links">
-		<li><a href="#Programming books">كتب برمجه</a></li>
-		<li><a href="#about">قصص اطفال
+		<li><a href="#كتب برمجه">كتب برمجه</a></li>
+		<li><a href="#قصص اطفال">قصص اطفال
 </a></li>
-		<li><a href="#work">روايات</a></li>
-		<li><a href="#projects">كتب لغات</a></li>
-		<li><a href="#contact">كتب علميه
-</a></li>
+		<li><a href="#روايات">روايات</a></li>
+		<li><a href="#كتب لغات">كتب لغات</a></li>
+		<li><a href="#كتب علمية">كتب علميه</a></li>
 	</ul>
 	<label for="nav-toggle" class="icon-burger">
 		<div class="line"></div>
@@ -55,9 +66,9 @@
 
 <!--Programming books-->
  		<div id="Programming booksclass">
-<HR><H1><CENTER>
- 	
-</H1>
+<CENTER>
+	<h1><div id="كتب برمجه">
+ كتب برمجه	</h1>
 <div class="BOX">
 <H2>
 	HTML<br>
@@ -114,10 +125,10 @@
 
 
 <!--Programming books-->
-
-<HR><H1><CENTER>
+<CENTER>
  	
-</H1>
+<h1><div id="قصص اطفال">
+ قصص أطفال</h1>
 <div class="BOX">
 <H2>
 	الفلاح<br>
@@ -157,7 +168,7 @@
 <div class="BOX">
 <H2>
 	النملله والثعلب<br>
-	<img src="y.jpg" height="100">
+	<img src="y.jpg" height="60">
 	<h3>download</h3>
  <A HREF=""></A>
 
@@ -165,7 +176,7 @@
 <div class="BOX">
 <H2>
 	 <br>
-	<img src="l.jpg" height="100">
+	<img src="l.jpg" height="80">
 	<h3>more</h3>
  <A HREF=""></A>
 
@@ -177,13 +188,14 @@
  
 <!--novel-->
 
-<CENTER><h2>
- 	
-</H1>
+<CENTER>
+	<h1><div id="روايات">
+ روايات	</h1>
+ 
 <div class="BOX">
 <H2>
 	 انت لي<br>
-	<img src="m.jpg" height="100">
+	<img src="m.jpg" height="80">
 	<h3>download</h3>
  <A HREF=""></A>
 
@@ -192,15 +204,15 @@
 <div class="BOX">
 <H2>
 	قواعد جارتين<br>
-	<img src="m.jpg" height="100">
+	<img src="m.jpg" height="80">
 	<h3>download</h3>
  <A HREF=""></A>
 
 </div>
 <div class="BOX">
-<H3>
+<H4>
 	في قلبي انثي عبريه<br>
-	<img src="m.jpg" height="100">
+	<img src="m.jpg" height="80">
 	<h3>download</h3>
  <A HREF=""></A>
 
@@ -208,18 +220,18 @@
  
 	
  <div class="BOX">
-<H2>
+<H4>
 	امنيتي ان اقتل رجل<br>
-	<img src="m.jpg" height="100">
+	<img src="m.jpg" height="80">
 	<h3>download</h3>
  <A HREF=""></A>
 
 </div>
 
 <div class="BOX">
-<H2>
+<H4>
 	ارض زيكولا<br>
-	<img src="m.jpg" height="100">
+	<img src="m.jpg" height="70">
 	<h3>download</h3>
  <A HREF=""></A>
 
@@ -227,7 +239,7 @@
 <div class="BOX">
 <H2>
 	 <br>
-	<img src="l.jpg" height="100">
+	<img src="l.jpg" height="80">
 	<h3>more</h3>
  <A HREF=""></A>
 
@@ -236,21 +248,22 @@
 
 
 <H1><CENTER>
- 	
-</H1>
+ 	<div id="كتب لغات">
+ كتب لغات	</h1>
+
 <div class="BOX">
-<H2>
+<H4>
 	اللغه التركيه<br>
-	<img src="b.jpg" height="100">
+	<img src="b.jpg" height="80">
 	<h3>download</h3>
  <A HREF=""></A>
 
 </div>
 
 <div class="BOX">
-<H2>
+<H4>
 	اللغه الانجليزيه<br>
-	<img src="b.jpg" height="100">
+	<img src="b.jpg" height="80">
 	<h3>download</h3>
  <A HREF=""></A>
 
@@ -275,9 +288,9 @@
 </div>
 
 <div class="BOX">
-<H2>
+<H4>
 	اللغه الفرنسيه<br>
-	<img src="b.jpg" height="100">
+	<img src="b.jpg" height="80">
 	<h3>download</h3>
  <A HREF=""></A>
 
@@ -294,10 +307,11 @@
 
 
  
-<!--Programming books-->
- <HR><H1><CENTER>
- 	
-</H1>
+
+<H1><CENTER>
+ 	<div id="كتب علميه">
+ كتب علميه	</h1>
+
 <div class="BOX">
 <H2>
 	القران الكريم<br>
@@ -388,9 +402,10 @@ input[type=submit]:hover {
 
 .con {
   border-radius:80px;
-  background-color:#eee;
+  background-color:silver;
   padding:99px;
-  margin-top:790;
+    margin-top:1000;
+    
   height: 670px;
 }
 </style>
@@ -398,7 +413,10 @@ input[type=submit]:hover {
 <body>
 
  
-<div class="con">
+<div class="con"><h1>
+</h1>
+	<br>
+	
      <label for="fname">First Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
@@ -424,6 +442,12 @@ input[type=submit]:hover {
 </div>
 
 
+
+
+</div>
+<br><br><br><br>
+<br> <br> 
+
 <div class="ff">
 	<p>
 		by zyad abdelfttah
@@ -440,12 +464,19 @@ input[type=submit]:hover {
 </a>
 <a href="https://twitter.com/Zyad37146421?s=09">
 <i class="fab fa-twitter-square"></i>
-
+</a>
 </div>
 
  
-</div>
-</div>
+
+      
+    <button class="change">night
+    <button onclick="nightMode()" class="change"> الوضع الليلي</button>
+
+
+<a href="#">الصفحه الرئيسيه</a>
+
+
 
 
 
